@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a5fc62be6c143aa9708b3ece532cae, type: 3}
+  m_Name: ActivityManager
+  m_EditorClassIdentifier: 
+  currentMainActivity: 4
+  interruptCount: 0.5
+  interruptedByMimi: 0
+  foodAmount: 0
+  snackAmount: 0
+  sleepAmount: 0
+  workIsCalled: 0
+  workProgress: 4.5
+  workMilstoneIndex: 1
+  timeRemaining: 0
+  naturalHappinessDelta:
+    min: -250
+    max: -100
+  naturalFullnessDelta:
+    min: -80
+    max: -20
+  naturalSobernessFactoredDelta:
+    min: -250
+    max: -80
+  interruptingCards: 00000000020000000300000004000000
+  foodCardLastDuration: 5
+  snackCardLastDuration: 3
+  sleepCardLastDuration: 6
+  workMilestoneCount: 4
+  workProgressAmountForMilestone: 5
+  interruptDelayedDuration: 2
+  totalTime: 180
+  idleInterruptChance: 0.5
+  eatInterruptChance: 0.1
+  eatHappinessDelta:
+    min: 0
+    max: 0
+  eatFullnessDelta:
+    min: 300
+    max: 800
+  eatSobernessDelta:
+    min: 0
+    max: 0
+  sleepInterruptChance: 0.1
+  sleepHappinessDelta:
+    min: 0
+    max: 0
+  sleepSobernessDelta:
+    min: 500
+    max: 1500
+  sleepFullnessDelta:
+    min: 20
+    max: 100
+  playVideoGameInterruptChance: 0.1
+  playVideoHappinessDelta:
+    min: 250
+    max: 500
+  playVideoGameSobernessDelta:
+    min: -50
+    max: 50
+  playVideoGameFullnessDelta:
+    min: -50
+    max: -10
+  workInterruptChanceIfNotInZone: 0.3
+  workHappinessDelta:
+    min: -100
+    max: -10
+  workSobernessDelta:
+    min: -100
+    max: -50
+  workFullnessDelta:
+    min: -50
+    max: -10
+  snackHappinessDelta:
+    min: 0
+    max: 0
+  snackFullnessDelta:
+    min: 120
+    max: 250
+  snackSobernessDelta:
+    min: 0
+    max: 0
+  mimiCardHappinessDelta:
+    min: 200
+    max: 300
+  workCardHappinessDeltaIfNotInZone:
+    min: -300
+    max: -100
+  stats: {fileID: 11400000, guid: 19ed164d94cab45cba17dc9d55df942e, type: 2}
+  activityChangedEvent: {fileID: 11400000, guid: a57adf289b7934b32b9dcc178d841b65,
+    type: 2}
+  cardPlayedEvent: {fileID: 11400000, guid: cc3b10373bcc94b0e906e2f544de049c, type: 2}
+  activityDecider: {fileID: 11400000, guid: b95f266e6044f418c8ced2490cbe7dc4, type: 2}
