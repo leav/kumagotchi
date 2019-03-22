@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47a57589d880d42be9305de0aca98022, type: 3}
   m_Name: ActivityDecider
   m_EditorClassIdentifier: 
-  bedIsMadeFitness: 8
-  hasFoodFitness: 5
-  playVideoGameFitness: 5
-  workFitnessIfInZone: 10
+  bedIsMadeFitness: 7
+  hasFoodFitness: 4
+  playVideoGameFitness: 4
+  workFitnessIfInZone: 11
   stats: {fileID: 11400000, guid: 19ed164d94cab45cba17dc9d55df942e, type: 2}
   activityManager: {fileID: 11400000, guid: deb51cbabc5264239afc53b73efae790, type: 2}

@@ -1,9 +1,7 @@
 fileFormatVersion: 2
-guid: 3f6bd4b15dc3ca541ba4e0b3b97fe45f
+guid: 242515e38c3b94d4381cb3de7f02c2d0
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: mimi 1_0
-    21300002: mimi 1_1
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -42,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -84,56 +82,16 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: mimi 1_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 26
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5622dc1c4e4c30a4684ec8dacea8e7f8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mimi 1_1
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 0
-        width: 26
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62b387213ff9ddd41b58953daf806b8e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ec7da78ae2d08a44e950bea926ddd5db
+    spriteID: 03c01b474fd1c0a4b9383d4c83dea61a
     vertices: []
     indices: 
     edges: []
     weights: []
-  spritePackingTag: Sprite
+  spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
   userData: 

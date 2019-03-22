@@ -32,7 +32,10 @@ public class RxTest : MonoBehaviour
         var updateStream = Observable.EveryFixedUpdate();
         var mainUpdateStream = updateStream.Where(_ => gameState == GameState.Main);
 
-        mainUpdateStream.Subscribe(_ => activityManager.OnUpdate());
+        mainUpdateStream.Subscribe(_ => {
+            activityManager.OnUpdate();
+            cardManager.OnUpdate();
+        });
 
         activityManager.Reset();
     }
@@ -64,7 +67,10 @@ public class RxTest : MonoBehaviour
         switch (gameState)
         {
             case GameState.Main:
-                if (activityManager.IsTimeUp())
+                if (activityManager.IsWorkDone()) {
+                    gameState = GameState.Ending;
+                }
+                else if (activityManager.IsTimeUp())
                 {
                     gameState = GameState.Ending;
                 }
@@ -87,6 +93,8 @@ public class RxTest : MonoBehaviour
         GUILayout.Label("ful " + stats.fullness.Get());
         GUILayout.Label("sob " + stats.soberness.Get());
         GUILayout.EndHorizontal();
+
+        GUILayout.Label("deal card " + cardManager.dealCardCountDown.ToString());
 
         if (GUILayout.Button("Add Work Milestone"))
         {

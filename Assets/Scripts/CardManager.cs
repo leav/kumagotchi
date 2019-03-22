@@ -6,9 +6,11 @@ public class CardManager : ScriptableObject
 {
     [Header("States")]
     public List<Card> cardsOnHand = new List<Card>();
+    public float dealCardCountDown = 0;
 
     [Header("Parameters")]
     public int maxCardsOnHand = 4;
+    public float dealCardSeconds = 3;
 
     [Header("Dependencies")]
     public CardPlayedEvent cardPlayedEvent;
@@ -47,15 +49,31 @@ public class CardManager : ScriptableObject
         {
             return;
         }
+        if (!isDealingCard()) {
+            dealCardCountDown = dealCardSeconds;
+        }
         var card = cardsOnHand[index];
         cardsOnHand.RemoveAt(index);
-        cardsOnHand.Insert(index, DealCard());
         cardPlayedEvent.Publish(card.cardType);
     }
 
     public void Play(Card card)
     {
         PlayAt(cardsOnHand.IndexOf(card));
+    }
+
+    public void OnUpdate() {
+        if (isDealingCard()) {
+            dealCardCountDown -= Time.fixedDeltaTime;
+            if (dealCardCountDown <= 0) {
+                cardsOnHand.Add(DealCard());
+                dealCardCountDown = dealCardSeconds;
+            }
+        }
+    }
+
+    private bool isDealingCard() {
+        return cardsOnHand.Count < maxCardsOnHand;
     }
 }
 

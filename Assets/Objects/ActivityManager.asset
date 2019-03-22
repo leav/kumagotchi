@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a5fc62be6c143aa9708b3ece532cae, type: 3}
   m_Name: ActivityManager
   m_EditorClassIdentifier: 
-  currentMainActivity: 4
-  interruptCount: 0.5
+  currentMainActivity: 0
+  interruptCount: 0
   interruptedByMimi: 0
   foodAmount: 0
   snackAmount: 0
   sleepAmount: 0
   workIsCalled: 0
-  workProgress: 4.5
-  workMilstoneIndex: 1
-  timeRemaining: 0
+  workProgress: 0
+  workMilstoneIndex: 0
+  timeRemaining: 180
   naturalHappinessDelta:
     min: -250
     max: -100
@@ -36,7 +36,7 @@ MonoBehaviour:
   snackCardLastDuration: 3
   sleepCardLastDuration: 6
   workMilestoneCount: 4
-  workProgressAmountForMilestone: 5
+  workProgressAmountForMilestone: 3
   interruptDelayedDuration: 2
   totalTime: 180
   idleInterruptChance: 0.5
@@ -62,15 +62,15 @@ MonoBehaviour:
     max: 100
   playVideoGameInterruptChance: 0.1
   playVideoHappinessDelta:
-    min: 250
-    max: 500
+    min: 200
+    max: 700
   playVideoGameSobernessDelta:
     min: -50
     max: 50
   playVideoGameFullnessDelta:
     min: -50
     max: -10
-  workInterruptChanceIfNotInZone: 0.3
+  workInterruptChanceIfNotInZone: 0.5
   workHappinessDelta:
     min: -100
     max: -10
@@ -91,7 +91,7 @@ MonoBehaviour:
     max: 0
   mimiCardHappinessDelta:
     min: 200
-    max: 300
+    max: 500
   workCardHappinessDeltaIfNotInZone:
     min: -300
     max: -100
